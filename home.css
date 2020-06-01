@@ -1,0 +1,19 @@
+body, html {
+    background-color:turquoise;
+}
+
+  .column {
+    float: left;
+  }
+  
+  .left, .right {
+    width: 25%;
+  }
+  
+  .middle {
+    width: 50%;
+  }
+
+  .hide{
+    list-style-type: none; 
+  }

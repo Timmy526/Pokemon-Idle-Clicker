@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Timothy Tu</title>
+        <!--Font Awesome-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">    
+        <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Signika" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/eb4c5e58e4.js"></script>
+        <!--Stylesheet-->
+        <link rel="stylesheet" type="text/css" href="home.css">
+        <!--Animate CSS-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+        <!-- Bootstrap
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        -->
+    </head>
+    <body>
+        <div class="row">
+            <div class="column left">
+                <center><h2>Upgrades</h2></center>
+                <ul>
+                    <li class = "hide">
+                        <img onclick = "PokeBalls()" src = "PokeBall.png" width = "12%">
+                        <p id = "PokeBallCost">Poke Balls cost: 20 Poke Dollars</p>
+                        <p id = "PokeBall">You have 0 Poke Balls</p>
+                    </li>
+                    <li class = "hide">
+                        <img onclick = "GreatBalls()" src = "GreatBall.png" width = "12%">
+                        <p id = "GreatBallCost">Great Balls cost: 60 Poke Dollars</p>
+                        <p id = "GreatBall">You have 0 Great Balls</p>
+                    </li>
+                    <li class = "hide">
+                        <img onclick = "PremierBalls()" src = "PremierBall.png" width = "12%">
+                        <p id = "PremierBallCost">Premier Balls cost: 120 Poke Dollars</p>
+                        <p id = "PremierBall">You have 0 Premier Balls</p>
+                    </li>
+                    <li class = "hide">
+                        <img onclick = "UltraBalls()" src = "UltraBall.png" width = "12%">
+                        <p id = "UltraBallCost">Ultra Balls cost: 300 Poke Dollars</p>
+                        <p id = "UltraBall">You have 0 Ultra Balls</p>
+                    </li>
+                    <li class = "hide">
+                        <img onclick = "DuskBalls()" src = "DuskBall.png" width = "12%">
+                        <p id = "DuskBallCost">Dusk Balls cost: 300 Poke Dollars</p>
+                        <p id = "DuskBall">You have 0 Dusk Balls</p>
+                    </li>
+                    <li class = "hide">
+                        <img onclick = "LoveBalls()" src = "LoveBall.png" width = "12%">
+                        <p id = "LoveBallCost">Love Balls cost: 300 Poke Dollars</p>
+                        <p id = "LoveBall">You have 0 Love Balls</p>
+                    </li>
+                    <li class = "hide">
+                        <img onclick = "SafariBalls()" src = "SafariBall.png" width = "12%">
+                        <p id = "SafariBallCost">Safari Balls cost: 300 Poke Dollars</p>
+                        <p id = "SafariBall">You have 0 Safari Balls</p>
+                    </li>
+                    <li class = "hide">
+                        <img onclick = "TimerBalls()" src = "TimerBall.png" width = "12%">
+                        <p id = "TimerBallCost">Timer Balls cost: 300 Poke Dollars</p>
+                        <p id = "TimerBall">You have 0 Timer Balls</p>
+                    </li>
+                    <li class = "hide">
+                        <img onclick = "MasterBalls()" src="MasterBall.png" width = "12%">
+                        <p id = "MasterBallCost">Master Balls cost: 300 Poke Dollars</p>
+                        <p id = "MasterBall">You have 0 Master Balls</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="column middle">
+                <br><br><br><br><br><br><br><br>
+                <center><p id = "PokeMaker"></p></center>
+                <center><p id = "PokeDollars"></p></center>
+                <center><img onclick="addOne()" src = "PokeDollars.jpg" width = 30%></center>
+            </div>
+            <div class="column right">
+                <button onclick = "load()">Load</button>
+                <button onclick = "save()">Save</button>
+                <h5 id = "Saved"></h5>
+            </div>
+        </div>
+
+        <!--Scripts-->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <!--WOW.js -->
+        <script src="js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
+        <!--Bootstrap-->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>        
+        <!--Font Awesome-->
+        <script src="https://kit.fontawesome.com/eb4c5e58e4.js"></script>
+        <!--JavaScript-->
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
